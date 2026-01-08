@@ -721,3 +721,10 @@ body {
 .tech-item:hover {
     transform: translateY(-5px);
 }
+
+/* ===== GitHub Stats Fix (Transparent BG) ===== */
+.stat-card {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
