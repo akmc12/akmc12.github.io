@@ -40,7 +40,9 @@ body {
     background: radial-gradient(ellipse at bottom, #1a1a2e 0%, #0a0a0f 100%);
 }
 
-.stars, .stars2, .stars3 {
+.stars,
+.stars2,
+.stars3 {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,8 +53,8 @@ body {
 
 .stars {
     background-image: radial-gradient(2px 2px at 20px 30px, #eee, transparent),
-                      radial-gradient(2px 2px at 40px 70px, #fff, transparent),
-                      radial-gradient(1px 1px at 90px 40px, #fff, transparent);
+        radial-gradient(2px 2px at 40px 70px, #fff, transparent),
+        radial-gradient(1px 1px at 90px 40px, #fff, transparent);
     background-size: 200px 200px;
     animation: stars-move 100s linear infinite;
     opacity: 0.5;
@@ -60,8 +62,8 @@ body {
 
 .stars2 {
     background-image: radial-gradient(1px 1px at 50px 160px, #ddd, transparent),
-                      radial-gradient(2px 2px at 90px 40px, #fff, transparent),
-                      radial-gradient(1px 1px at 130px 80px, #fff, transparent);
+        radial-gradient(2px 2px at 90px 40px, #fff, transparent),
+        radial-gradient(1px 1px at 130px 80px, #fff, transparent);
     background-size: 300px 300px;
     animation: stars-move 150s linear infinite;
     opacity: 0.3;
@@ -69,15 +71,20 @@ body {
 
 .stars3 {
     background-image: radial-gradient(1px 1px at 80px 10px, #fff, transparent),
-                      radial-gradient(1px 1px at 110px 90px, #ddd, transparent);
+        radial-gradient(1px 1px at 110px 90px, #ddd, transparent);
     background-size: 400px 400px;
     animation: stars-move 200s linear infinite;
     opacity: 0.2;
 }
 
 @keyframes stars-move {
-    from { transform: translateY(0); }
-    to { transform: translateY(-1000px); }
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-1000px);
+    }
 }
 
 /* ===== Navigation ===== */
@@ -228,12 +235,21 @@ body {
 }
 
 @keyframes draw-wing {
-    to { stroke-dashoffset: 0; }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 @keyframes flutter {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .scroll-indicator {
@@ -257,9 +273,22 @@ body {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: rotate(45deg) translateY(0); }
-    40% { transform: rotate(45deg) translateY(10px); }
-    60% { transform: rotate(45deg) translateY(5px); }
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: rotate(45deg) translateY(0);
+    }
+
+    40% {
+        transform: rotate(45deg) translateY(10px);
+    }
+
+    60% {
+        transform: rotate(45deg) translateY(5px);
+    }
 }
 
 /* ===== Sections ===== */
@@ -499,46 +528,46 @@ body {
     .navbar {
         padding: 15px 20px;
     }
-    
+
     .nav-links a {
         margin-left: 15px;
         font-size: 0.9rem;
     }
-    
+
     .hero {
         padding: 100px 20px;
     }
-    
+
     .hero-content {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .name {
         font-size: 2.5rem;
     }
-    
+
     .title {
         font-size: 1.5rem;
     }
-    
+
     .hero-buttons {
         justify-content: center;
         flex-wrap: wrap;
     }
-    
+
     .section {
         padding: 60px 20px;
     }
-    
+
     .about-content {
         grid-template-columns: 1fr;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-links {
         flex-direction: column;
         align-items: center;
@@ -547,7 +576,7 @@ body {
 
 /* ===== Showcase Section ===== */
 .showcase {
-    background: var(--bg-primary); 
+    background: var(--bg-primary);
     /* Slightly different from neighbor sections if needed, or keep consistent */
 }
 
@@ -592,12 +621,12 @@ body {
         flex-direction: row;
         text-align: left;
     }
-    
+
     .showcase-text {
         flex: 1;
         padding-right: 20px;
     }
-    
+
     .showcase-media {
         flex: 1;
         justify-content: flex-end;
@@ -640,7 +669,8 @@ body {
 .portfolio-container {
     position: relative;
     width: 100%;
-    height: 85vh; /* Makes it look like a seamless part of the page */
+    height: 85vh;
+    /* Makes it look like a seamless part of the page */
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -660,7 +690,8 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, rgba(20, 20, 30, 0.9), rgba(30, 30, 50, 0.9));
-    height: 400px; /* Smaller height than the iframe */
+    height: 400px;
+    /* Smaller height than the iframe */
 }
 
 .portfolio-message {
@@ -689,9 +720,20 @@ body {
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.1); opacity: 1; }
-    100% { transform: scale(1); opacity: 0.8; }
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
 }
 
 /* ===== GitHub Stats Section ===== */
@@ -738,7 +780,8 @@ body {
 }
 
 .affiliation-logo {
-    background: rgba(255, 255, 255, 0.9); /* Light background for logos */
+    background: rgba(255, 255, 255, 0.9);
+    /* Light background for logos */
     padding: 15px;
     border-radius: 12px;
     display: flex;
@@ -765,7 +808,7 @@ body {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .affiliation-logo {
         width: 100%;
     }
@@ -787,7 +830,8 @@ body {
 
 /* ===== Research Icons (FontAwesome) ===== */
 .research-icon {
-    font-size: 3rem;  /* Replaces width/height for SVG */
+    font-size: 3rem;
+    /* Replaces width/height for SVG */
     margin-bottom: 20px;
     color: var(--accent-secondary);
     transition: transform 0.3s ease, color 0.3s ease;
@@ -797,157 +841,4 @@ body {
 .research-card:hover .research-icon {
     transform: scale(1.1) rotate(10deg);
     color: var(--accent-primary);
-}
-
-/* ===== Timeline Section ===== */
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 0;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: rgba(79, 195, 247, 0.3);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -1px;
-}
-
-.timeline-item {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-    box-sizing: border-box;
-}
-
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -10px;
-    background-color: var(--bg-card);
-    border: 3px solid var(--accent-primary);
-    top: 25px;
-    border-radius: 50%;
-    z-index: 1;
-    transition: all 0.3s ease;
-}
-
-.timeline-item:hover::after {
-    background-color: var(--accent-primary);
-    box-shadow: 0 0 15px var(--accent-primary);
-}
-
-.timeline-left {
-    left: 0;
-}
-
-.timeline-right {
-    left: 50%;
-}
-
-.timeline-left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 28px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid rgba(255, 255, 255, 0.05);
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent rgba(255, 255, 255, 0.05);
-}
-
-.timeline-right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 28px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid rgba(255, 255, 255, 0.05);
-    border-width: 10px 10px 10px 0;
-    border-color: transparent rgba(255, 255, 255, 0.05) transparent transparent;
-}
-
-.timeline-right::after {
-    left: -10px;
-}
-
-.timeline-content {
-    padding: 20px 30px;
-    background: var(--bg-card);
-    position: relative;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.timeline-item:hover .timeline-content {
-    transform: translateY(-5px);
-    border-color: var(--accent-primary);
-}
-
-.timeline-date {
-    color: var(--accent-secondary);
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.timeline-content h3 {
-    margin-bottom: 5px;
-    color: var(--text-primary);
-    font-size: 1.2rem;
-}
-
-.timeline-content h4 {
-    color: var(--accent-primary);
-    margin-bottom: 15px;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.timeline-content p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-/* Timeline Responsive */
-@media screen and (max-width: 768px) {
-    .timeline::after {
-        left: 31px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .timeline-item::before {
-        left: 60px;
-        border: medium solid rgba(255, 255, 255, 0.05);
-        border-width: 10px 10px 10px 0;
-        border-color: transparent rgba(255, 255, 255, 0.05) transparent transparent;
-    }
-
-    .timeline-left::after, .timeline-right::after {
-        left: 21px;
-    }
-
-    .timeline-right {
-        left: 0%;
-    }
 }
