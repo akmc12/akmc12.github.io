@@ -770,3 +770,17 @@ body {
         width: 100%;
     }
 }
+
+/* ===== Research Icons ===== */
+.research-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--accent-secondary);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.research-card:hover .research-icon {
+    transform: scale(1.1) rotate(5deg);
+    color: var(--accent-primary);
+}
