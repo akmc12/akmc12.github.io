@@ -784,3 +784,17 @@ body {
     transform: scale(1.1) rotate(5deg);
     color: var(--accent-primary);
 }
+
+/* ===== Research Icons (FontAwesome) ===== */
+.research-icon {
+    font-size: 3rem;  /* Replaces width/height for SVG */
+    margin-bottom: 20px;
+    color: var(--accent-secondary);
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.research-card:hover .research-icon {
+    transform: scale(1.1) rotate(10deg);
+    color: var(--accent-primary);
+}
