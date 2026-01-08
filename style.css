@@ -603,3 +603,35 @@ body {
         justify-content: flex-end;
     }
 }
+
+/* ===== Showcase Grid Update ===== */
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.showcase-item {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.showcase-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-primary);
+}
+
+.showcase-item h3 {
+    margin-top: 15px;
+    color: var(--accent-primary);
+    font-size: 1.2rem;
+}
+
+.showcase-item p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
